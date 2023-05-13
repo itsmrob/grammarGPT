@@ -1,0 +1,22 @@
+{
+    "name": "GrammarGPT",
+    "version": "1.0.0",
+    "description": "Get an automated translation of your text using chatGPT technology",
+    "manifest_version": 3,
+    "author": "Roberto Lopez",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "GrammarGPT by Rob"
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "js/app.js"
+            ],
+            "matches": [
+                "https://developer.chrome.com/docs/extensions/*",
+                "https://developer.chrome.com/docs/webstore/*"
+            ]
+        }
+    ]
+}
